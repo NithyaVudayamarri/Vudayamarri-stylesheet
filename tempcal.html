@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Nithya Vudayamarri stylesheet</title>
+  <link rel="stylesheet" type="text/css" href="temp.css">
+<nav>
+ 
+
+
+
+  <div class="topnav">
+      <a href="index.html">Nithya Vudayamarri</a>
+    <a  href="index.html">Home</a>
+    <a class="active" href="tempcal.html">MyPage</a>
+    <a href="contactus.html">Contact</a>
+   
+
+  </div>
+</nav>
+
+</head> 
+<body>
+        <title>Temperature Calculator</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="temp.css">
+    
+        <div class="grid-container">
+            <div class="item1">
+                <h2>Temperature Converter</h2>
+                <p id="heading">Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+                
+            </div>
+            <div class="item2">
+                <label id="Inputlabel">Fahrenheit:</label>
+                <input id="inputFahrenheit" type="number" name="tempinput"placeholder="Input Temparature" oninput="temperatureConverter()" onkeypress="temperatureConverter(this.value)">
+                 <br/> 
+            </div>
+            <div class="item3">
+                <label>Inverse:</label><input type="checkbox" id = "inverseSelect" onchange="temperatureConverter()" name="inverse" value=true/>
+            <br>
+            <div class="abc">
+                <label id="OutputLabel">Celsius: </label><span style="padding-left:10px"id="outputCelcius"></span>
+                
+              </div>  
+            
+          </div>
+    
+      </div>
+    </body>
+    </html>
