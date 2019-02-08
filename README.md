@@ -2,7 +2,7 @@
 # nithyavudayamarri
 
 ## Repository links
-- [webpage](https://nithyavudayamarri.github.io/nithyavudayamarri/)
+- [webpage](https://nithyavudayamarri.github.io/Vudayamarri-stylesheet/)
 * [source](https://github.com/NithyaVudayamarri/Vudayamarri-stylesheet)
 
 
