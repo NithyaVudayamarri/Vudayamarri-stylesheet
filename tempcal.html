@@ -40,7 +40,8 @@
                 
                 <input id="inputFahrenheit" type="number" name="tempinput"placeholder="Input Farenheit Temparature" >
                 <button id ="convert" class="btn" onclick="myFunction()">convert</button>
-                <label id="OutputLabel">Celsius: </label><span style="padding-left:10px"id="outputCelcius"></span>
+                <label id="OutputLabel">Celsius: </label>
+                <p style="padding-left:10px"id="outputCelcius"></p>
                 <!-- oninput="temperatureConverter(this.value)" onkeypress="temperatureConverter(this.value)" -->
                 <br/> 
             </div>
@@ -51,17 +52,28 @@
                 <label id="Inputlabel1">Celsius:</label>
                 <input id="inputCelsius" type="number" name="tempinput"placeholder="Input Celsius Temparature" >
                 <button id ="convert1" class="btn" onclick="myFunction1()">convert</button>
-                <label id="OutputLabel1">Farenheit: </label><span style="padding-left:10px"id="outputFarenheit"></span>
-                </span>
+                <label id="OutputLabel1">Farenheit: </label>
+                <p style="padding-left:10px"id="outputFarenheit"></p>
                 
+                Retrieve previous results:
+                <!--retrieving previous results that are stored in local storage-->
+            </h3>
+            <ul id="retrieving"></ul>
+            <button id="retrieve" class="btn btn-primary">Retrieve</button>
+            <ul id = "retrieving2"></ul>
+            <button id = "retrieve2" class = "btn btn-primary">Retreive2</button>
+            <button id="clearall" class="btn btn-primary">Clear All</button>
+            <h3>Simpsons' Quotes</h3>
+            <button id="simpbutt" class="btn">Mouse over me!</button>
+            <p id="simpsons"></p>  
               </div>  
             
         <div class="text-center">
-            <a class="btn btn-primary" id="clearStorage" >Clear Local Storage</a>
+            
         </div>
           </div>
-          <script src = "./temp.js">
-          </script>
+          
+          <script src="script.js"></script>
     
       </div>
     </body>

@@ -7,8 +7,10 @@ function myFunction1() {
 }
 
 function temperatureConverter(valNum) {
+     
     valNum = parseInt(valNum);
-    document.getElementById("outputCelcius").innerHTML = (valNum - 32) / 1.8;
+    document.getElementById("outputCelcius").innerHTML = (valNum - 32 ) / 1.8 
+    
 }
 
 function temperatureConverter1(valNum) {

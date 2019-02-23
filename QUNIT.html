@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>QUnit basic example</title>
+      <link rel = "stylesheet" href = "https://code.jquery.com/qunit/qunit-2.9.1.css">
+      <script src = "https://code.jquery.com/qunit/qunit-2.9.1.js"></script>
+   </head>
+   
+   <body>
+      <div id = "qunit"></div>
+      <div id = "qunit-fixture"></div> 
+      
+      <script type= "text/javascript">
+         function temperatureConverter(valnum) 
+         {
+            return  (valNum - 32) / 1.8;
+         }
+         QUnit.test("UnitTest", function (assert) {
+        
+        assert.equal(product, "0.453592", "1 pound is equal to 0.453592 so test is passed!!")
+    })
+        
+      </script>
+      <script src="test.js"></script>
+   </body>
+</html>
