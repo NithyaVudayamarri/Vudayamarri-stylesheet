@@ -10,17 +10,82 @@
       <div id = "qunit"></div>
       <div id = "qunit-fixture"></div> 
       
-      <script type= "text/javascript">
-         function temperatureConverter(valnum) 
-         {
-            return  (valNum - 32) / 1.8;
-         }
-         QUnit.test("UnitTest", function (assert) {
-        
-        assert.equal(product, "0.453592", "1 pound is equal to 0.453592 so test is passed!!")
-    })
-        
+      <script>
+
+         
+ function temperatureConverter(x) 
+ {
+   number=x;
+     var temp;
+
+     if(number<=0)
+     {
+         temp=0;
+     }
+
+    else if(number>3000)
+     {
+         temp=0;
+     }
+     else
+     {
+temp=(number - 32 ) / 1.8;
+     }
+     
+     return temp;
+     
+     
+ }
+ 
+ 
+ 
+
+
+         QUnit.test( "ConvertTemp", function( assert )
+          {
+            var result = temperatureConverter(47);
+
+            assert.equal( result, "8.333333333333334", "tested with small number" );
+
+            
+
+            var res = temperatureConverter(2000);
+
+            assert.equal( res, "1093.3333333333333", "tested with Higher number" );
+
+
+            var res1 = temperatureConverter(0);
+
+            assert.equal( res1, "0", "tested with Zero" );
+
+
+            var res2 = temperatureConverter(-2);
+
+            assert.equal( res1, "0", "tested with Negative number" );
+
+
+            var res2 = temperatureConverter(3002);
+
+            assert.equal( res1, "0", "tested with above given condition number" );
+
+
+
+
+
+
+
+
+            
+
+
+
+         //   var res = temperatureConverter1(47);
+
+           // assert.equal( res, "8.333333333333334", "temps" );
+
+         });
       </script>
-      <script src="test.js"></script>
+      <script src=./nithya.js"></script>
+      <script src=./test.js"></script>
    </body>
 </html>
