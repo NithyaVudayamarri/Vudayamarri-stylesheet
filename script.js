@@ -13,8 +13,8 @@ document.getElementById('retrieve2').addEventListener('click', function () {
 console.log('clear local storage')
 document.getElementById('clearall').addEventListener('click', function () {
     localStorage.clear() //clear local storage
-    document.getElementById('outputCelcius').innerHTML = ""
-    document.getElementById('outputFarenheit').innerHTML = ""
+    document.getElementById('retrieving').innerHTML = ""
+    document.getElementById('retrieving2').innerHTML = ""
 })
 function myFunction() {
     temperatureConverter(document.getElementById('inputFahrenheit').value);
